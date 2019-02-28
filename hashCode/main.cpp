@@ -5,18 +5,15 @@ using namespace std;
 
 int main()
 {
-    const char* files[]=
-    {
+
+    /*
         "b_lovely_landscapes.txt",
         "c_memorable_moments.txt",
         "d_pet_pictures.txt",
         "e_shiny_selfies.txt"
-    };
-    int f=1;
-    for(auto file:files)
-    {
-        freopen(file,"r",stdin);
-        freopen(char(f)+".txt","w",stdout);
+        */
+        freopen("b_lovely_landscapes.txt","r",stdin);
+        freopen("out1.txt","w",stdout);
 
         int noPhotos;
         char orientaion;
@@ -74,6 +71,5 @@ int main()
             if(i&1)cout<<endl;
             else cout<<" ";
         }
-    f++;
-    }
+
 }
