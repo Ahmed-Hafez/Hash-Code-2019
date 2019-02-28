@@ -4,8 +4,16 @@
 using namespace std;
 
 int main(){
-    freopen("e_shiny_selfies.txt","r",stdin);
-    freopen("out4.txt","w",stdout);
+    string files[]={
+    "b_lovely_landscapes.txt",
+    "c_memorable_moments.txt",
+    "d_pet_pictures.txt",
+    "e_shiny_selfies.txt"
+    }
+    int i=1;
+    for(auto file:files){
+    freopen(file,"r",stdin);
+    freopen("out"+(i++)+".txt","w",stdout);
   int noPhotos;
   char orientaion;
   int noTags;
@@ -51,5 +59,6 @@ for(int i=0;i<x;i++){
     cout<<V[i];
     if(i&1)cout<<endl;
     else cout<<" ";
+}
 }
 }
